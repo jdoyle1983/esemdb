@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E871EFC0-77CA-46B2-9519-11A0AF887A5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>EsEmDb</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <RootNamespace>EsEmDb</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="EsEmDatabase.cs" />
+    <Compile Include="EsEmTable.cs" />
+    <Compile Include="EsEmColumn.cs" />
+    <Compile Include="EsEmQuery.cs" />
+    <Compile Include="EsEmResult.cs" />
+    <Compile Include="InternalClasses\DbHeader.cs" />
+    <Compile Include="InternalClasses\DbTools.cs" />
+    <Compile Include="InternalClasses\OffsetLink.cs" />
+    <Compile Include="InternalClasses\DbTableIter.cs" />
+    <Compile Include="InternalClasses\SimpleParser.cs" />
+    <Compile Include="SqlParser\BracesTag.cs" />
+    <Compile Include="SqlParser\ForUpdateTag.cs" />
+    <Compile Include="SqlParser\FromTag.cs" />
+    <Compile Include="SqlParser\GroupByTag.cs" />
+    <Compile Include="SqlParser\OrderByTag.cs" />
+    <Compile Include="SqlParser\ParserBase.cs" />
+    <Compile Include="SqlParser\QuotedIdentifierTag.cs" />
+    <Compile Include="SqlParser\SelectTag.cs" />
+    <Compile Include="SqlParser\SimpleOneWordTag.cs" />
+    <Compile Include="SqlParser\SimpleTwoWordTag.cs" />
+    <Compile Include="SqlParser\SqlParser.cs" />
+    <Compile Include="SqlParser\StartWith.cs" />
+    <Compile Include="SqlParser\StringLiteralTag.cs" />
+    <Compile Include="SqlParser\TagBase.cs" />
+    <Compile Include="SqlParser\WhereTag.cs" />
+    <Compile Include="SqlParser\CreateTableTag.cs" />
+    <Compile Include="SqlParser\InsertTag.cs" />
+    <Compile Include="SqlParser\UpdateTag.cs" />
+    <Compile Include="SqlParser\DeleteTag.cs" />
+    <Compile Include="SqlParser\DropTableTag.cs" />
+    <Compile Include="SqlParser\InnerJoinTag.cs" />
+    <Compile Include="EsEmTableIndex.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <BootstrapperPackage Include="..\..\..\..\..\..\Users\jdoyle\Projects\EsEmDb\CSharp\EsEmDb\Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="..\..\..\..\..\..\Users\jdoyle\Projects\EsEmDb\CSharp\EsEmDb\Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="..\..\..\..\..\..\Users\jdoyle\Projects\EsEmDb\CSharp\EsEmDb\Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>

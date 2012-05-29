@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<QueryExamples>
+  <ParsedDocument>
+    <Tag Type="SELECT">
+      <Text Value="*"/>
+    </Tag>
+    <Tag Type="FROM">
+      <Text Value="mytable"/>
+    </Tag>
+    <Tag Type="WHERE">
+      <Tag Type="BRACES">
+        <Tag Type="BRACES">
+          <Tag Type="BRACES">
+            <Text Value="column1"/>
+            <Text Value="="/>
+            <Text Value="5"/>
+            <Text Value="AND"/>
+            <Text Value="column2"/>
+            <Text Value="&lt;"/>
+            <Text Value="&gt;"/>
+            <Text Value="3"/>
+          </Tag>
+          <Text Value="OR"/>
+          <Tag Type="BRACES">
+            <Text Value="column3"/>
+            <Text Value="&gt;"/>
+            <Text Value="8"/>
+            <Text Value="AND"/>
+            <Text Value="column4"/>
+            <Text Value="&lt;"/>
+            <Text Value="9"/>
+          </Tag>
+        </Tag>
+        <Text Value="OR"/>
+        <Tag Type="BRACES">
+          <Tag Type="BRACES">
+            <Text Value="column5"/>
+            <Text Value="&gt;"/>
+            <Text Value="="/>
+            <Text Value="12"/>
+            <Text Value="OR"/>
+            <Text Value="column6"/>
+            <Text Value="&lt;"/>
+            <Text Value="="/>
+            <Text Value="88"/>
+          </Tag>
+          <Text Value="AND"/>
+          <Tag Type="BRACES">
+            <Text Value="column7"/>
+            <Text Value="="/>
+            <Text Value="15"/>
+            <Text Value="OR"/>
+            <Text Value="column8"/>
+            <Text Value="="/>
+            <Text Value="9"/>
+          </Tag>
+        </Tag>
+      </Tag>
+      <Text Value="or"/>
+      <Tag Type="BRACES">
+        <Text Value="column9"/>
+        <Text Value="is"/>
+        <Text Value="null"/>
+        <Text Value="AND"/>
+        <Text Value="column10"/>
+        <Text Value="is"/>
+        <Text Value="not"/>
+        <Text Value="null"/>
+      </Tag>
+      <Text Value="OR"/>
+      <Text Value="column11"/>
+      <Text Value="="/>
+      <Text Value="42"/>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="SELECT">
+      <Text Value="*"/>
+    </Tag>
+    <Tag Type="FROM">
+      <Text Value="mytable"/>
+    </Tag>
+    <Tag Type="WHERE">
+      <Text Value="Column"/>
+      <Text Value="="/>
+      <Text Value="5"/>
+      <Text Value="AND"/>
+      <Text Value="Column2"/>
+      <Text Value="="/>
+      <Tag Type="STRING_LITERAL" Value="test"/>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="SELECT">
+      <Text Value="firstname"/>
+      <Text Value=","/>
+      <Text Value="lastname"/>
+      <Text Value=","/>
+      <Text Value="age"/>
+    </Tag>
+    <Tag Type="FROM">
+      <Text Value="mytable"/>
+    </Tag>
+    <Tag Type="WHERE">
+      <Text Value="id"/>
+      <Text Value="="/>
+      <Text Value="5"/>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="SELECT">
+      <Text Value="firstname"/>
+      <Text Value=","/>
+      <Text Value="lastname"/>
+      <Text Value=","/>
+      <Text Value="departmentname"/>
+    </Tag>
+    <Tag Type="FROM">
+      <Text Value="mytable"/>
+    </Tag>
+    <Tag Type="INNER_JOIN">
+      <Text Value="departments"/>
+      <Text Value="ON"/>
+      <Text Value="mytable"/>
+      <Text Value="."/>
+      <Text Value="departmentid"/>
+      <Text Value="="/>
+      <Text Value="departments"/>
+      <Text Value="."/>
+      <Text Value="id"/>
+    </Tag>
+    <Tag Type="WHERE">
+      <Text Value="id"/>
+      <Text Value="&gt;"/>
+      <Text Value="15"/>
+    </Tag>
+    <Tag Type="ORDER_BY">
+      <Text Value="firstname"/>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="CREATE_TABLE">
+      <Text Value="mytable"/>
+      <Tag Type="BRACES">
+        <Text Value="id"/>
+        <Text Value="INTEGER"/>
+        <Text Value="PRIMARYKEY"/>
+        <Text Value="AUTOINCREMENT"/>
+        <Text Value=","/>
+        <Text Value="firstname"/>
+        <Text Value="TEXT"/>
+        <Text Value=","/>
+        <Text Value="lastname"/>
+        <Text Value="TEXT"/>
+        <Text Value=","/>
+        <Text Value="signupdate"/>
+        <Text Value="DATETIME"/>
+      </Tag>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="INSERT">
+      <Text Value="mytable"/>
+      <Tag Type="BRACES">
+        <Text Value="username"/>
+        <Text Value=","/>
+        <Text Value="password"/>
+      </Tag>
+      <Text Value="VALUES"/>
+      <Tag Type="BRACES">
+        <Tag Type="STRING_LITERAL" Value="myusername"/>
+        <Text Value=","/>
+        <Tag Type="STRING_LITERAL" Value="mypassword"/>
+      </Tag>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="INSERT">
+      <Text Value="mytable"/>
+      <Tag Type="BRACES">
+        <Text Value="username"/>
+        <Text Value=","/>
+        <Text Value="password"/>
+      </Tag>
+      <Text Value="VALUES"/>
+      <Tag Type="BRACES">
+        <Tag Type="STRING_LITERAL" Value="user1"/>
+        <Text Value=","/>
+        <Tag Type="STRING_LITERAL" Value="pass1"/>
+      </Tag>
+      <Text Value=","/>
+      <Tag Type="BRACES">
+        <Tag Type="STRING_LITERAL" Value="user2"/>
+        <Text Value=","/>
+        <Tag Type="STRING_LITERAL" Value="pass2"/>
+      </Tag>
+      <Text Value=","/>
+      <Tag Type="BRACES">
+        <Tag Type="STRING_LITERAL" Value="user3"/>
+        <Text Value=","/>
+        <Tag Type="STRING_LITERAL" Value="pass3"/>
+      </Tag>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="UPDATE">
+      <Text Value="mytable"/>
+      <Text Value="SET"/>
+      <Text Value="username"/>
+      <Text Value="="/>
+      <Tag Type="STRING_LITERAL" Value="newname"/>
+    </Tag>
+    <Tag Type="WHERE">
+      <Text Value="id"/>
+      <Text Value="="/>
+      <Text Value="8"/>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="DELETE">
+      <Text Value="mytable"/>
+    </Tag>
+    <Tag Type="WHERE">
+      <Text Value="id"/>
+      <Text Value="="/>
+      <Text Value="5"/>
+    </Tag>
+  </ParsedDocument>
+  <ParsedDocument>
+    <Tag Type="DROP_TABLE">
+      <Text Value="mytable"/>
+    </Tag>
+  </ParsedDocument>
+</QueryExamples>

@@ -1,0 +1,165 @@
+create table TestTable
+(
+id INTEGER primary key auto increment,
+firstname TEXT,
+lastname TEXT,
+signupdate DATETIME );
+
+===========================================================================
+===========================================================================
+
+CreateTable
+StringLiteral : TestTable
+OpenBrace
+StringLiteral : id
+Integer
+PrimaryKey
+AutoIncrement
+StringLiteral : firstname
+Text
+StringLiteral : lastname
+Text
+StringLiteral : signupdate
+DateTime
+CloseBrace
+
+===========================================================================
+===========================================================================
+===========================================================================
+
+
+
+
+
+select firstname,lastname from TestTable where (firstname='Jason' and las
+tname='Doyle' and userid > 5) or (IsAdmin=1 and IsActive=1);
+
+===========================================================================
+===========================================================================
+
+Select
+StringLiteral : firstname
+StringLiteral : lastname
+From
+StringLiteral : TestTable
+Where
+OpenBrace
+StringLiteral : firstname
+Equal
+StringLiteral : Jason
+And
+StringLiteral : lastname
+Equal
+StringLiteral : Doyle
+And
+StringLiteral : userid
+GreaterThan
+StringLiteral : 5
+CloseBrace
+Or
+OpenBrace
+StringLiteral : IsAdmin
+Equal
+StringLiteral : 1
+And
+StringLiteral : IsActive
+Equal
+StringLiteral : 1
+CloseBrace
+
+===========================================================================
+===========================================================================
+===========================================================================
+
+
+
+
+drop table TestTable;
+
+===========================================================================
+===========================================================================
+
+DropTable
+StringLiteral : TestTable
+
+===========================================================================
+===========================================================================
+===========================================================================
+
+
+
+
+update TestTable set firstname='Jason' where id=5;
+
+===========================================================================
+===========================================================================
+
+Update
+StringLiteral : TestTable
+Set
+StringLiteral : firstname
+Equal
+StringLiteral : Jason
+Where
+StringLiteral : id
+Equal
+StringLiteral : 5
+
+
+===========================================================================
+===========================================================================
+===========================================================================
+
+
+
+
+
+delete from TestTable where id > 5;
+
+===========================================================================
+===========================================================================
+
+Delete
+StringLiteral : TestTable
+Where
+StringLiteral : id
+GreaterThan
+StringLiteral : 5
+
+===========================================================================
+===========================================================================
+===========================================================================
+
+
+
+
+
+insert into TestTable (firstname,lastname) values ('Jason','Doyle'),('Hea
+ther','Doyle'),('Izabella','Doyle');
+
+===========================================================================
+===========================================================================
+
+Insert
+StringLiteral : TestTable
+OpenBrace
+StringLiteral : firstname
+StringLiteral : lastname
+CloseBrace
+Values
+OpenBrace
+StringLiteral : Jason
+StringLiteral : Doyle
+CloseBrace
+OpenBrace
+StringLiteral : Heather
+StringLiteral : Doyle
+CloseBrace
+OpenBrace
+StringLiteral : Izabella
+StringLiteral : Doyle
+CloseBrace
+
+===========================================================================
+===========================================================================
+===========================================================================
