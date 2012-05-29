@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+    THIS FILE WAS FOUND SOMEWHERE ONLINE
+    UNTIL I CAN FIND THE SOURCE, I WON'T APPLY LICENSE TERMS TO IT
+*/
+
+using System;
 using System.Text;
 using System.Xml;
 
