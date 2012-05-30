@@ -1,0 +1,573 @@
+Revision: 40
+Author: jdoyle
+Date: Tuesday, May 29, 2012 3:33:18 PM
+Message:
+Began working on server application.
+----
+Modified : /trunk/CSharp/EsEmDb/EsEmTableIndex.cs
+Modified : /trunk/CSharp/EsEmDb.sln
+Added : /trunk/CSharp/EsEmDbServer
+Added : /trunk/CSharp/EsEmDbServer/SystemDb.cs
+
+Revision: 39
+Author: jdoyle
+Date: Friday, January 21, 2011 2:57:20 PM
+Message:
+Begain working on indexing tables to speed up queries.
+
+----
+Modified : /trunk/CSharp/EsEmDb/EsEmDb.csproj
+Added : /trunk/CSharp/EsEmDb/EsEmTableIndex.cs
+Modified : /trunk/CSharp/EsEmDb.sln
+Modified : /trunk/CSharp/EsEmDb.userprefs
+Modified : /trunk/CSharp/EsEmDbTest/EsEmDbTest.csproj
+
+Revision: 38
+Author: jdoyle
+Date: Thursday, April 08, 2010 9:51:39 PM
+Message:
+General additions to C version of database engine.
+----
+Added : /trunk/C/EsEmDb.cbp
+Added : /trunk/C/EsEmDb.workspace
+Modified : /trunk/C/Makefile
+Modified : /trunk/C/include/DbHeader.h
+Modified : /trunk/C/include/DbTableIter.h
+Modified : /trunk/C/include/DbTools.h
+Modified : /trunk/C/include/EsEmColumn.h
+Modified : /trunk/C/include/EsEmDatabase.h
+Modified : /trunk/C/include/EsEmDb.h
+Modified : /trunk/C/include/EsEmDbLib.h
+Modified : /trunk/C/include/EsEmQuery.h
+Modified : /trunk/C/include/EsEmResult.h
+Modified : /trunk/C/include/EsEmTable.h
+Modified : /trunk/C/include/OffsetLink.h
+Modified : /trunk/C/include/SimpleParser.h
+Modified : /trunk/C/src/DbHeader.c
+Modified : /trunk/C/src/EsEmColumn.c
+Modified : /trunk/C/src/OffsetLink.c
+
+Revision: 37
+Author: jdoyle
+Date: Thursday, April 08, 2010 6:50:49 PM
+Message:
+Makefile complete for library building.
+----
+Modified : /trunk/C/Makefile
+
+Revision: 36
+Author: jdoyle
+Date: Thursday, April 08, 2010 6:38:37 PM
+Message:
+Added Initial Files
+----
+Added : /trunk/C/include/DbHeader.h
+Added : /trunk/C/include/DbTableIter.h
+Added : /trunk/C/include/DbTools.h
+Added : /trunk/C/include/EsEmColumn.h
+Added : /trunk/C/include/EsEmDatabase.h
+Modified : /trunk/C/include/EsEmDb.h
+Added : /trunk/C/include/EsEmDbLib.h
+Added : /trunk/C/include/EsEmQuery.h
+Added : /trunk/C/include/EsEmResult.h
+Added : /trunk/C/include/EsEmTable.h
+Added : /trunk/C/include/OffsetLink.h
+Added : /trunk/C/include/SimpleParser.h
+Added : /trunk/C/src/DbHeader.c
+Added : /trunk/C/src/EsEmColumn.c
+Added : /trunk/C/src/OffsetLink.c
+Added : /trunk/C/src/DbTableIter.c
+Added : /trunk/C/src/DbTools.c
+Added : /trunk/C/src/EsEmDatabase.c
+Added : /trunk/C/src/EsEmDb.c
+Added : /trunk/C/src/EsEmDbLib.c
+Added : /trunk/C/src/EsEmQuery.c
+Added : /trunk/C/src/EsEmResult.c
+Added : /trunk/C/src/EsEmTable.c
+Added : /trunk/C/src/SimpleParser.c
+
+Revision: 35
+Author: jdoyle
+Date: Thursday, April 08, 2010 6:25:20 PM
+Message:
+Created Makefile for multi-platform compilation
+----
+Added : /trunk/C/Makefile
+Added : /trunk/C/include/EsEmDb.h
+
+Revision: 34
+Author: jdoyle
+Date: Thursday, April 08, 2010 5:58:09 PM
+Message:
+Added base C Directories
+----
+Added : /trunk/C/include
+Added : /trunk/C/src
+Added : /trunk/C/bin
+Added : /trunk/C/lib
+Added : /trunk/C/obj
+
+Revision: 33
+Author: jdoyle
+Date: Thursday, April 08, 2010 5:30:25 PM
+Message:
+Began adding C version of EsEmDb
+----
+Added : /trunk/C
+
+Revision: 32
+Author: jdoyle
+Date: Thursday, April 08, 2010 5:29:42 PM
+Message:
+Updates
+----
+Deleted : /trunk/CSharp/EsEmDbTest/bin/Debug/EsEmDb.dll
+Deleted : /trunk/CSharp/EsEmDbTest/bin/Debug/EsEmDbTest.exe
+
+Revision: 31
+Author: jdoyle
+Date: Thursday, April 08, 2010 5:22:26 PM
+Message:
+Moving data around
+----
+Added : /trunk/CSharp/EsEmDb (Copy from path: /trunk/EsEmDb, Revision, 30)
+Added : /trunk/CSharp/EsEmDb.sln (Copy from path: /trunk/EsEmDb.sln, Revision, 30)
+Added : /trunk/CSharp/EsEmDb.userprefs (Copy from path: /trunk/EsEmDb.userprefs, Revision, 30)
+Added : /trunk/CSharp/EsEmDbTest (Copy from path: /trunk/EsEmDbTest, Revision, 30)
+Modified : /trunk/CSharp/EsEmDbTest/bin/Debug/EsEmDb.dll
+Modified : /trunk/CSharp/EsEmDbTest/bin/Debug/EsEmDbTest.exe
+Added : /trunk/CSharp/CacheCompare.ods (Copy from path: /trunk/CacheCompare.ods, Revision, 30)
+Deleted : /trunk/CacheCompare.ods
+Deleted : /trunk/EsEmDb
+Deleted : /trunk/EsEmDb.sln
+Deleted : /trunk/EsEmDb.userprefs
+Added : /trunk/CSharp/EsEmDb.usertasks (Copy from path: /trunk/EsEmDb.usertasks, Revision, 30)
+Deleted : /trunk/EsEmDb.usertasks
+Deleted : /trunk/EsEmDbTest
+Added : /trunk/CSharp/examples.txt (Copy from path: /trunk/examples.txt, Revision, 30)
+Deleted : /trunk/examples.txt
+Added : /trunk/CSharp/examples.xml (Copy from path: /trunk/examples.xml, Revision, 30)
+Deleted : /trunk/examples.xml
+
+Revision: 30
+Author: jdoyle
+Date: Thursday, April 08, 2010 5:19:10 PM
+Message:
+Moving directory structure around.
+----
+Added : /trunk/CSharp
+
+Revision: 29
+Author: jdoyle
+Date: Monday, April 05, 2010 3:33:47 PM
+Message:
+Updates
+----
+Modified : /trunk/EsEmDb/EsEmTable.cs
+Modified : /trunk/EsEmDbTest/bin/Debug/EsEmDbTest.exe
+
+Revision: 28
+Author: jdoyle
+Date: Friday, March 26, 2010 4:00:12 PM
+Message:
+Added program output
+
+----
+Added : /trunk/EsEmDbTest/bin
+Added : /trunk/EsEmDbTest/bin/Debug
+Added : /trunk/EsEmDbTest/bin/Debug/EsEmDbTest.exe
+Added : /trunk/EsEmDbTest/bin/Debug/EsEmDb.dll
+
+Revision: 27
+Author: jdoyle
+Date: Friday, March 26, 2010 2:50:37 PM
+Message:
+Added Cache File
+----
+Added : /trunk/CacheCompare.ods
+
+Revision: 26
+Author: jdoyle
+Date: Friday, March 26, 2010 2:28:21 PM
+Message:
+Updates
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+
+Revision: 25
+Author: jdoyle
+Date: Wednesday, March 24, 2010 7:30:41 PM
+Message:
+Final Update, Need to look into file storage method, seems to be the bottle neck.  Think perhaps caching by default, and use background thread to write changes to file, require flush of db before closing.
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmDatabase.cs
+Modified : /trunk/EsEmDb/EsEmResult.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+
+Revision: 24
+Author: jdoyle
+Date: Wednesday, March 24, 2010 4:34:12 PM
+Message:
+Updated to new parser, added caching ability. Working on speed optimizations.
+----
+Modified : /trunk/examples.txt
+Modified : /trunk/EsEmDb/EsEmTable.cs
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmDatabase.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+Modified : /trunk/EsEmDb/InternalClasses/SimpleParser.cs
+
+Revision: 23
+Author: jdoyle
+Date: Wednesday, March 24, 2010 8:35:12 AM
+Message:
+UPdates
+----
+Added : /trunk/examples.txt
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/SimpleParser.cs
+
+Revision: 22
+Author: jdoyle
+Date: Tuesday, March 23, 2010 5:16:08 PM
+Message:
+New parser finished, seems fast enough, need to implement to actually test the speed gains.
+----
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/SimpleParser.cs
+
+Revision: 21
+Author: jdoyle
+Date: Tuesday, March 23, 2010 3:31:57 PM
+Message:
+All Queries now work, changing parsing method, seems to be rather slow.
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmDatabase.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+Added : /trunk/EsEmDb/InternalClasses/SimpleParser.cs
+Modified : /trunk/EsEmDb/EsEmDb.csproj
+
+Revision: 20
+Author: jdoyle
+Date: Monday, March 22, 2010 10:40:53 PM
+Message:
+Lots of updates
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmResult.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+
+Revision: 19
+Author: jdoyle
+Date: Monday, March 22, 2010 4:25:56 PM
+Message:
+CREATE TABLE
+DROP TABLE
+INSERT INTO
+SELECT * FROM (NO WHERE CLAUSE YET, PROGRESS THOUGH)
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+
+Revision: 18
+Author: jdoyle
+Date: Monday, March 22, 2010 3:53:13 PM
+Message:
+Major progress in parsing sql string
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmResult.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+
+Revision: 17
+Author: jdoyle
+Date: Monday, March 22, 2010 7:44:43 AM
+Message:
+general updates
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmDatabase.cs
+Modified : /trunk/EsEmDb/EsEmResult.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTools.cs
+
+Revision: 16
+Author: jdoyle
+Date: Thursday, March 18, 2010 3:31:17 PM
+Message:
+General Code Updates, Began Working on Getting Queries Up and Running.
+----
+Modified : /trunk/EsEmDb.sln
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmDatabase.cs
+Modified : /trunk/EsEmDb/EsEmDb.csproj
+Modified : /trunk/EsEmDb/InternalClasses/DbTools.cs
+Modified : /trunk/EsEmDbTest/EsEmDbTest.csproj
+
+Revision: 15
+Author: jdoyle
+Date: Monday, January 04, 2010 4:21:51 PM
+Message:
+update
+
+----
+Modified : /trunk/EsEmDb.userprefs
+
+Revision: 14
+Author: jdoyle
+Date: Friday, December 18, 2009 9:20:30 PM
+Message:
+query updates
+
+----
+Modified : /trunk/EsEmDb.userprefs
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+
+Revision: 13
+Author: jdoyle
+Date: Thursday, December 17, 2009 4:26:11 PM
+Message:
+Added example xml file of different queries to build parser
+
+----
+Added : /trunk/examples.xml
+
+Revision: 12
+Author: jdoyle
+Date: Thursday, December 17, 2009 4:25:08 PM
+Message:
+Query Updates
+
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+
+Revision: 11
+Author: jdoyle
+Date: Wednesday, December 16, 2009 3:23:35 PM
+Message:
+Updated Match Type of have an invalid setting.
+Change struct to class to be bale to set initial values.
+----
+Modified : /trunk/EsEmDb.userprefs
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+
+Revision: 10
+Author: jdoyle
+Date: Wednesday, December 16, 2009 11:25:32 AM
+Message:
+UPDATES
+
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmResult.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+Modified : /trunk/EsEmDb/EsEmColumn.cs
+
+Revision: 9
+Author: jdoyle
+Date: Wednesday, December 16, 2009 12:20:01 AM
+Message:
+began adding match cases
+
+* EsEmDb/EsEmQuery.cs:
+* EsEmDb/InternalClasses/DbTableIter.cs: 
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+
+Revision: 8
+Author: jdoyle
+Date: Monday, December 14, 2009 10:16:43 PM
+Message:
+put back file that was remove by mistake.
+
+----
+Added : /trunk/EsEmDb.userprefs
+
+Revision: 7
+Author: jdoyle
+Date: Monday, December 14, 2009 10:15:48 PM
+Message:
+Removed files from project that were no longer necessary.
+Got query parsing up to speed with the new parser, it is now
+in the same state it was when the manual parser was in place.
+
+----
+Deleted : /trunk/EsEmDb.userprefs
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+Modified : /trunk/EsEmDb/EsEmDb.csproj
+Deleted : /trunk/EsEmDb/EsEmDb.pidb
+Added : /trunk/EsEmDb/SqlParser/CreateTableTag.cs
+Added : /trunk/EsEmDb/SqlParser/DeleteTag.cs
+Added : /trunk/EsEmDb/SqlParser/DropTableTag.cs
+Added : /trunk/EsEmDb/SqlParser/InnerJoinTag.cs
+Added : /trunk/EsEmDb/SqlParser/InsertTag.cs
+Modified : /trunk/EsEmDb/SqlParser/SqlParser.cs
+Added : /trunk/EsEmDb/SqlParser/UpdateTag.cs
+Deleted : /trunk/EsEmDbTest/EsEmDbTest.pidb
+
+Revision: 6
+Author: jdoyle
+Date: Monday, December 14, 2009 9:55:48 AM
+Message:
+lot's of updates (sql parser!)
+* EsEmDb/SqlParser:
+* EsEmDb.userprefs:
+* EsEmDbTest/Main.cs:
+* EsEmDb/EsEmDb.pidb:
+* EsEmDb/EsEmQuery.cs:
+* EsEmDb/SqlParser.dll:
+* EsEmDb/EsEmDb.csproj:
+* EsEmDbTest/EsEmDbTest.pidb:
+* EsEmDb/SqlParser/TagBase.cs:
+* EsEmDb/SqlParser/FromTag.cs:
+* EsEmDb/SqlParser/WhereTag.cs:
+* EsEmDb/SqlParser/BracesTag.cs:
+* EsEmDb/SqlParser/SqlParser.cs:
+* EsEmDb/SqlParser/SelectTag.cs:
+* EsEmDb/SqlParser/StartWith.cs:
+* EsEmDb/SqlParser/OrderByTag.cs:
+* EsEmDb/SqlParser/GroupByTag.cs:
+* EsEmDb/SqlParser/ParserBase.cs:
+* EsEmDb/SqlParser/ForUpdateTag.cs:
+* EsEmDb/SqlParser/StringLiteralTag.cs:
+* EsEmDb/SqlParser/SimpleTwoWordTag.cs:
+* EsEmDb/SqlParser/SimpleOneWordTag.cs:
+* EsEmDb/SqlParser/QuotedIdentifierTag.cs: 
+----
+Modified : /trunk/EsEmDb.userprefs
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/EsEmDb.csproj
+Modified : /trunk/EsEmDb/EsEmDb.pidb
+Added : /trunk/EsEmDb/SqlParser
+Added : /trunk/EsEmDb/SqlParser/SqlParser.cs
+Modified : /trunk/EsEmDbTest/EsEmDbTest.pidb
+Added : /trunk/EsEmDb/SqlParser/BracesTag.cs
+Added : /trunk/EsEmDb/SqlParser/ForUpdateTag.cs
+Added : /trunk/EsEmDb/SqlParser/FromTag.cs
+Added : /trunk/EsEmDb/SqlParser/GroupByTag.cs
+Added : /trunk/EsEmDb/SqlParser/OrderByTag.cs
+Added : /trunk/EsEmDb/SqlParser/ParserBase.cs
+Added : /trunk/EsEmDb/SqlParser/QuotedIdentifierTag.cs
+Added : /trunk/EsEmDb/SqlParser/SelectTag.cs
+Added : /trunk/EsEmDb/SqlParser/SimpleOneWordTag.cs
+Added : /trunk/EsEmDb/SqlParser/SimpleTwoWordTag.cs
+Added : /trunk/EsEmDb/SqlParser/StartWith.cs
+Added : /trunk/EsEmDb/SqlParser/StringLiteralTag.cs
+Added : /trunk/EsEmDb/SqlParser/TagBase.cs
+Added : /trunk/EsEmDb/SqlParser/WhereTag.cs
+Added : /trunk/EsEmDb/SqlParser.dll
+
+Revision: 5
+Author: jdoyle
+Date: Sunday, December 13, 2009 5:54:41 PM
+Message:
+Moved all table data processing to the DbTableIter class.  Reads, writes, updates, and deletes are all handled by this class now.
+Result class done, just need to setup sql parsing for select, update, and delete, and populating result object from select query.
+
+* EsEmDb.pidb:
+* EsEmQuery.cs:
+* EsEmResult.cs:
+* EsEmDb.csproj:
+* InternalClasses/DataBlock.cs:
+* InternalClasses/ColumnData.cs:
+* InternalClasses/DbTableIter.cs: 
+----
+Modified : /trunk/EsEmDb/EsEmQuery.cs
+Modified : /trunk/EsEmDb/EsEmResult.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+Modified : /trunk/EsEmDb/EsEmDb.csproj
+Modified : /trunk/EsEmDb/EsEmDb.pidb
+Deleted : /trunk/EsEmDb/InternalClasses/ColumnData.cs
+Deleted : /trunk/EsEmDb/InternalClasses/DataBlock.cs
+
+Revision: 4
+Author: jdoyle
+Date: Friday, December 11, 2009 4:39:08 PM
+Message:
+Fixed bug in data file.
+
+Added bool data type
+
+* EsEmDbTest/Main.cs:
+* EsEmDb/EsEmTable.cs:
+* EsEmDb/EsEmColumn.cs:
+* EsEmDb/EsEmDatabase.cs:
+* EsEmDb/InternalClasses/DbTools.cs:
+* EsEmDb/InternalClasses/DbHeader.cs:
+* EsEmDb/InternalClasses/ColumnData.cs:
+* EsEmDb/InternalClasses/DbTableIter.cs: 
+----
+Modified : /trunk/EsEmDb/EsEmTable.cs
+Modified : /trunk/EsEmDb/EsEmDatabase.cs
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTools.cs
+Modified : /trunk/EsEmDb/EsEmColumn.cs
+Modified : /trunk/EsEmDb/InternalClasses/ColumnData.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbHeader.cs
+
+Revision: 3
+Author: jdoyle
+Date: Friday, December 11, 2009 3:30:58 AM
+Message:
+Added datetime data type, seems like db changes are stored in the file, but ignored int he headers, need to fix.
+
+* EsEmDbTest/Main.cs:
+* EsEmDb/EsEmColumn.cs:
+* EsEmDb/InternalClasses/DbTools.cs:
+* EsEmDb/InternalClasses/ColumnData.cs:
+* EsEmDb/InternalClasses/DbTableIter.cs: 
+----
+Modified : /trunk/EsEmDbTest/Main.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+Modified : /trunk/EsEmDb/InternalClasses/DbTools.cs
+Modified : /trunk/EsEmDb/EsEmColumn.cs
+Modified : /trunk/EsEmDb/InternalClasses/ColumnData.cs
+
+Revision: 1
+Author: jdoyle
+Date: Friday, December 11, 2009 3:13:30 AM
+Message:
+Initial Import
+
+----
+Added : /trunk
+Added : /trunk/EsEmDb
+Added : /trunk/EsEmDb.sln
+Added : /trunk/EsEmDb.userprefs
+Added : /trunk/EsEmDb.usertasks
+Added : /trunk/EsEmDbTest
+Added : /trunk/EsEmDb/EsEmTable.cs
+Added : /trunk/EsEmDb/EsEmQuery.cs
+Added : /trunk/EsEmDb/EsEmDatabase.cs
+Added : /trunk/EsEmDb/EsEmResult.cs
+Added : /trunk/EsEmDbTest/Main.cs
+Added : /trunk/EsEmDb/InternalClasses
+Added : /trunk/EsEmDb/InternalClasses/DbTableIter.cs
+Added : /trunk/EsEmDb/EsEmDb.csproj
+Added : /trunk/EsEmDb/InternalClasses/DbTools.cs
+Added : /trunk/EsEmDbTest/EsEmDbTest.csproj
+Added : /trunk/EsEmDb/EsEmColumn.cs
+Added : /trunk/EsEmDb/EsEmDb.pidb
+Added : /trunk/EsEmDbTest/EsEmDbTest.pidb
+Added : /trunk/EsEmDb/InternalClasses/ColumnData.cs
+Added : /trunk/EsEmDb/InternalClasses/DataBlock.cs
+Added : /trunk/EsEmDb/InternalClasses/DbHeader.cs
+Added : /trunk/EsEmDb/AssemblyInfo.cs
+Added : /trunk/EsEmDb/InternalClasses/OffsetLink.cs
+Added : /trunk/EsEmDb/bin
+Added : /trunk/EsEmDb/bin/Debug
+Added : /trunk/EsEmDbTest/AssemblyInfo.cs
+
