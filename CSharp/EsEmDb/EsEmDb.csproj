@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -66,27 +66,6 @@
     <Compile Include="InternalClasses\OffsetLink.cs" />
     <Compile Include="InternalClasses\DbTableIter.cs" />
     <Compile Include="InternalClasses\SimpleParser.cs" />
-    <Compile Include="SqlParser\BracesTag.cs" />
-    <Compile Include="SqlParser\ForUpdateTag.cs" />
-    <Compile Include="SqlParser\FromTag.cs" />
-    <Compile Include="SqlParser\GroupByTag.cs" />
-    <Compile Include="SqlParser\OrderByTag.cs" />
-    <Compile Include="SqlParser\ParserBase.cs" />
-    <Compile Include="SqlParser\QuotedIdentifierTag.cs" />
-    <Compile Include="SqlParser\SelectTag.cs" />
-    <Compile Include="SqlParser\SimpleOneWordTag.cs" />
-    <Compile Include="SqlParser\SimpleTwoWordTag.cs" />
-    <Compile Include="SqlParser\SqlParser.cs" />
-    <Compile Include="SqlParser\StartWith.cs" />
-    <Compile Include="SqlParser\StringLiteralTag.cs" />
-    <Compile Include="SqlParser\TagBase.cs" />
-    <Compile Include="SqlParser\WhereTag.cs" />
-    <Compile Include="SqlParser\CreateTableTag.cs" />
-    <Compile Include="SqlParser\InsertTag.cs" />
-    <Compile Include="SqlParser\UpdateTag.cs" />
-    <Compile Include="SqlParser\DeleteTag.cs" />
-    <Compile Include="SqlParser\DropTableTag.cs" />
-    <Compile Include="SqlParser\InnerJoinTag.cs" />
     <Compile Include="EsEmTableIndex.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
